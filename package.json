@@ -4,6 +4,9 @@
   "description": "use browser history stack as a react state in Next.js app.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "jest",
     "build": "rollup -c"
