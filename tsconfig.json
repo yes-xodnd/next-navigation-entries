@@ -2,9 +2,11 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "ESNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "declaration": true,
+    "emitDeclarationOnly": true,
     "outDir": "./dist",
+    "declarationDir": "./dist/types",
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     "strict": true,
     "jsx": "preserve",

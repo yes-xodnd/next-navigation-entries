@@ -2,9 +2,11 @@
   "name": "next-navigation-entries",
   "version": "1.0.0",
   "description": "use browser history stack as a react state in Next.js app.",
-  "main": "index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -17,17 +19,28 @@
   },
   "homepage": "https://github.com/yes-xodnd/next-navigation-entries#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/jest": "^29.5.8",
+    "@types/next": "^9.0.0",
     "@types/react": "^18.2.37",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
+    "rollup": "^4.4.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   },
-  "dependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
-    "babel-jest": "^29.7.0",
+  "peerDependencies": {
     "next": "^12.0.0",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
