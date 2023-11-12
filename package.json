@@ -7,6 +7,12 @@
   "files": [
     "/dist"
   ],
+  "keywords": [
+    "next",
+    "history",
+    "navigation",
+    "router"
+  ],
   "scripts": {
     "test": "jest",
     "build": "rollup -c"
